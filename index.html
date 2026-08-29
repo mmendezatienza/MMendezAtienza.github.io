@@ -1,24 +1,21 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Academic website of Marco Méndez Atienza, economist and faculty member at Tecnológico de Monterrey.">
-  <title>Marco Méndez Atienza | Economics</title>
-  <link rel="icon" href="assets/favicon.ico?v=3" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=3">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png?v=3">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  >
-
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Academic website of Marco Méndez-Atienza, economist and faculty member at Tecnológico de Monterrey." name="description"/>
+<title>Marco Méndez-Atienza | Economics</title>
+<link href="assets/favicon.ico?v=3" rel="icon" sizes="any"/>
+<link href="assets/favicon-32.png?v=3" rel="icon" sizes="32x32" type="image/png"/>
+<link href="assets/favicon-16.png?v=3" rel="icon" sizes="16x16" type="image/png"/>
+<link href="assets/apple-touch-icon.png?v=3" rel="apple-touch-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
+<style>
     /* Compact research cards */
     .research-list.compact-research {
       display: grid;
@@ -59,11 +56,18 @@
       font-weight: 700;
       letter-spacing: 0.055em;
       text-transform: uppercase;
-      color: #3f5f7d;
-      background: rgba(0, 58, 112, 0.07);
+      color: #697386;
+      background: rgba(107, 114, 128, 0.10);
+      border: 1px solid rgba(107, 114, 128, 0.12);
       border-radius: 999px;
       padding: 6px 8px;
       white-space: nowrap;
+    }
+
+    .compact-research .research-status.published {
+      color: #0b6b5d;
+      background: rgba(16, 185, 129, 0.11);
+      border-color: rgba(16, 185, 129, 0.20);
     }
 
     .compact-research .research-year-small {
@@ -148,8 +152,15 @@
     }
 
     [data-theme="dark"] .compact-research .research-status {
-      color: #abc4dc;
-      background: rgba(145, 190, 230, 0.09);
+      color: #a7afbb;
+      background: rgba(148, 163, 184, 0.10);
+      border-color: rgba(148, 163, 184, 0.16);
+    }
+
+    [data-theme="dark"] .compact-research .research-status.published {
+      color: #7dd3c7;
+      background: rgba(45, 212, 191, 0.11);
+      border-color: rgba(45, 212, 191, 0.20);
     }
 
     [data-theme="dark"] .compact-research .research-meta,
@@ -167,353 +178,305 @@
       }
     }
   </style>
-
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#home" aria-label="Go to homepage">
-  <span>MMA</span>
+<header class="site-header">
+<div class="container nav-wrap">
+<a aria-label="Go to homepage" class="brand" href="#home">
+<span>MMA</span>
 </a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
-        <i class="fa-solid fa-moon" aria-hidden="true"></i>
-      </button>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Economics · Public policy · Data analysis</p>
-          <h1>Marco Méndez Atienza</h1>
-          <p class="hero-role">Director of the B.A. Program in Economics at Tecnológico de Monterrey, Mexico City Campus.</p>
-          <p class="hero-summary">
+<nav aria-label="Main navigation" class="main-nav">
+<a href="#about">About</a>
+<a href="#research">Research</a>
+<a href="#teaching">Teaching</a>
+<a href="#experience">Experience</a>
+<a href="#contact">Contact</a>
+</nav>
+<button aria-label="Switch color theme" class="theme-toggle" title="Switch color theme" type="button">
+<i aria-hidden="true" class="fa-solid fa-moon"></i>
+</button>
+</div>
+</header>
+<main>
+<section class="hero" id="home">
+<div class="container hero-grid">
+<div class="hero-copy">
+<p class="eyebrow">Economics · Public policy · Data analysis</p>
+<h1>Marco Méndez-Atienza</h1>
+<p class="hero-role">Director of the B.A. Program in Economics at Tecnológico de Monterrey, Mexico City Campus.</p>
+<p class="hero-summary">
             Economist and lecturer working on urban economics, public safety, policy evaluation, and quantitative methods.
           </p>
-          <div class="hero-actions">
-            <a class="button primary" href="assets/CV.pdf" target="_blank" rel="noopener">View CV</a>
-            <a class="button secondary" href="#research">Research</a>
-          </div>
-          <div class="hero-meta">
-            <span>Mexico City</span>
-          </div>
-          <div class="social-links" aria-label="Professional profiles">
-            <a href="mailto:marco.mendez@tec.mx" aria-label="Send email" title="Email">
-              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/marcomna/"
-              target="_blank"
-              rel="noopener"
-              aria-label="LinkedIn profile"
-              title="LinkedIn"
-            >
-              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
-            </a>
-
-            <a
-              href="https://github.com/mmendezatienza"
-              target="_blank"
-              rel="noopener"
-              aria-label="GitHub profile"
-              title="GitHub"
-            >
-              <i class="fa-brands fa-github" aria-hidden="true"></i>
-            </a>
-
-            <a
-              href="https://scholar.google.com/citations?user=HlDYImEAAAAJ&hl=en"
-              target="_blank"
-              rel="noopener"
-              aria-label="Google Scholar profile"
-              title="Google Scholar"
-            >
-              <i class="fa-brands fa-google-scholar" aria-hidden="true"></i>
-            </a>
-
-            <a
-              href="https://orcid.org/0009-0003-3967-4782"
-              target="_blank"
-              rel="noopener"
-              aria-label="ORCID profile"
-              title="ORCID"
-            >
-              <i class="fa-brands fa-orcid" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="portrait-wrap">
-          <div class="portrait-card">
-            <img src="assets/foto.png" alt="Portrait of Marco Méndez Atienza">
-          </div>
-          <div class="portrait-accent" aria-hidden="true"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="container two-col">
-        <div>
-          <p class="section-label">About</p>
-          <h2>Profile</h2>
-        </div>
-        <div class="prose">
-          <p>
+<div class="hero-actions">
+<a class="button primary" href="assets/CV.pdf" rel="noopener" target="_blank">View CV</a>
+<a class="button secondary" href="#research">Research</a>
+</div>
+<div class="hero-meta">
+<span>Mexico City</span>
+</div>
+<div aria-label="Professional profiles" class="social-links">
+<a aria-label="Send email" href="mailto:marco.mendez@tec.mx" title="Email">
+<i aria-hidden="true" class="fa-solid fa-envelope"></i>
+</a>
+<a aria-label="LinkedIn profile" href="https://www.linkedin.com/in/marcomna/" rel="noopener" target="_blank" title="LinkedIn">
+<i aria-hidden="true" class="fa-brands fa-linkedin-in"></i>
+</a>
+<a aria-label="GitHub profile" href="https://github.com/mmendezatienza" rel="noopener" target="_blank" title="GitHub">
+<i aria-hidden="true" class="fa-brands fa-github"></i>
+</a>
+<a aria-label="Google Scholar profile" href="https://scholar.google.com/citations?user=HlDYImEAAAAJ&amp;hl=en" rel="noopener" target="_blank" title="Google Scholar">
+<i aria-hidden="true" class="fa-brands fa-google-scholar"></i>
+</a>
+<a aria-label="ORCID profile" href="https://orcid.org/0009-0003-3967-4782" rel="noopener" target="_blank" title="ORCID">
+<i aria-hidden="true" class="fa-brands fa-orcid"></i>
+</a>
+</div>
+</div>
+<div class="portrait-wrap">
+<div class="portrait-card">
+<img alt="Portrait of Marco Méndez-Atienza" src="assets/foto.png"/>
+</div>
+<div aria-hidden="true" class="portrait-accent"></div>
+</div>
+</div>
+</section>
+<section class="section" id="about">
+<div class="container two-col">
+<div>
+<p class="section-label">About</p>
+<h2>Profile</h2>
+</div>
+<div class="prose">
+<p>
             I direct the undergraduate Economics program and coordinate the Applied Economics and Data Science concentration at Tecnológico de Monterrey. My work includes teaching, academic administration, research, and economic consulting.
           </p>
-          <p>
+<p>
             I am currently pursuing a Ph.D. in Public Policy. I hold an M.A. in Economics from El Colegio de México and a B.A. in Economics from Tecnológico de Monterrey.
           </p>
-        </div>
-      </div>
+</div>
+</div>
+<div class="container interest-grid">
+<article class="interest-card">
+<span>01</span>
+<h3>Urban economics</h3>
+<p>Crime, mobility, public space, and territorial inequality.</p>
+</article>
+<article class="interest-card">
+<span>02</span>
+<h3>Policy evaluation</h3>
+<p>Causal inference and impact evaluation of public programs.</p>
+</article>
+<article class="interest-card">
+<span>03</span>
+<h3>Quantitative methods</h3>
+<p>Econometrics, spatial analysis, programming, and data visualization.</p>
+</article>
+</div>
+</section>
+<section class="section alt" id="research">
+<div class="container section-heading">
+<div>
+<p class="section-label">Research</p>
+<h2>Publications and working papers</h2>
+</div>
+<p>Selected published and ongoing work.</p>
+</div>
+<div class="container research-list compact-research">
 
-      <div class="container interest-grid">
-        <article class="interest-card">
-          <span>01</span>
-          <h3>Urban economics</h3>
-          <p>Crime, mobility, public space, and territorial inequality.</p>
-        </article>
-        <article class="interest-card">
-          <span>02</span>
-          <h3>Policy evaluation</h3>
-          <p>Causal inference and impact evaluation of public programs.</p>
-        </article>
-        <article class="interest-card">
-          <span>03</span>
-          <h3>Quantitative methods</h3>
-          <p>Econometrics, spatial analysis, programming, and data visualization.</p>
-        </article>
-      </div>
-    </section>
 
-    <section class="section alt" id="research">
-      <div class="container section-heading">
-        <div>
-          <p class="section-label">Research</p>
-          <h2>Publications and working papers</h2>
-        </div>
-        <p>Selected published and ongoing work.</p>
-      </div>
 
-      <div class="container research-list compact-research">
-        <article class="research-card">
-          <div class="research-card-head">
-            <span class="research-status">Published</span>
-            <span class="research-year-small">2026</span>
-          </div>
-          <h3 class="research-title">Yes to Disarmament, Yes to Peace: Measuring the Impact of Mexico City’s Gun Buyback Initiative</h3>
-          <p class="research-meta">Marco Méndez Atienza &amp; Aurora Ramírez Álvarez</p>
-          <p class="research-meta"><em>World Development</em> · <a href="https://www.sciencedirect.com/science/article/pii/S0305750X26002354" target="_blank" rel="noopener">Article ↗</a></p>
-          <details>
-            <summary>Abstract</summary>
-            <p class="abstract-text">This paper evaluates Mexico City’s voluntary gun buyback program, <em>Sí al desarme, sí a la paz</em>, launched in January 2019. Using state-month data for 2017–2023, we estimate program effects with synthetic control and synthetic difference-in-differences designs. We find a statistically significant decline in our composite outcome, which combines recorded firearm-related crimes with unclassified deaths to conservatively guard against possible outcome reclassification. The estimated decline is equivalent to roughly 17% of the composite outcome’s pre-treatment mean. Because unclassified deaths need not be firearm-related, this specification prioritizes robustness to misclassification over direct substantive interpretation. The more interpretable disaggregated estimates show that the effect is concentrated in intentional firearm injuries, while effects on firearm homicides are statistically indistinguishable from zero across specifications. An illustrative Phase 1 calculation implies approximately 11,354 MXN ($560 USD) in spending per estimated averted event in the composite outcome. We also find no detectable substitution into non-firearm injuries. Mechanism evidence indicates that the program primarily collected civilian handguns and is consistent with a situational opportunity-reduction channel in civilian settings: reducing immediate access to firearms can limit escalation and lower the likelihood that routine conflicts translate into gun injuries, rather than directly disrupting organized-crime arsenals. Robustness checks, including placebo timing tests around COVID lockdown and triangulation with INEGI vital statistics, suggest that the results are not driven by reporting or reclassification. The findings contribute the first causal evidence on a voluntary gun buyback in Mexico and, by focusing on non-lethal firearm injuries rather than solely on homicides, identify a margin of impact that prior Latin American evaluations have not examined.</p>
-          </details>
-        </article>
 
-        <article class="research-card">
-          <div class="research-card-head">
-            <span class="research-status">Published</span>
-            <span class="research-year-small">2026</span>
-          </div>
-          <h3 class="research-title">Urban Dystopias: Crime around the Utopías in Mexico City</h3>
-          <p class="research-meta">Marco Méndez Atienza</p>
-          <p class="research-meta"><em>Global Crime</em> · <a href="https://doi.org/10.1080/17440572.2026.2698532" target="_blank" rel="noopener">Article ↗</a></p>
-          <details>
-            <summary>Abstract</summary>
-            <p class="abstract-text">This paper evaluates Mexico City’s Utopías, a network of large community complexes designed to activate situational crime-prevention mechanisms. Using monthly georeferenced crime data (2017–2024) and a staggered difference-in-differences estimator, we compare AGEBs within 300 metres of each Utopía to not-yet-treated areas. The results show clear heterogeneity: significant reductions in intentional injuries, simple drug possession, mass event theft, public-service vehicle theft without violence, and RTP robbery with violence, but increases in shoplifting, property damage, intimidation, violent vehicle theft, pickpocketing on public transport, and homicide by beating. These mixed effects are consistent with Situational Crime Prevention predictions about differential mechanism activation under conditions of inequality and institutional fragility, as spatial activation strengthens guardianship while simultaneously expanding opportunities for opportunistic crime. The study shows how environmental design performs under inequality and highlights the need for sustained management to mitigate criminogenic spillovers.</p>
-          </details>
-        </article>
 
-        <article class="research-card">
-          <div class="research-card-head">
-            <span class="research-status">Working paper</span>
-            <span class="research-year-small">WP</span>
-          </div>
-          <h3 class="research-title">The Geography of Jurisdiction: Administrative Borders and Urban Crime</h3>
-          <p class="research-meta">Marco Méndez Atienza</p>
-          <details>
-            <summary>Abstract</summary>
-            <p class="abstract-text">This paper examines whether administrative boundaries generate discontinuities in crime and public safety by exploiting the border between Mexico City and the State of Mexico. Although neighborhoods located on opposite sides of the boundary can be geographically close and share similar urban and socioeconomic characteristics, they are governed by different state and local institutions, police forces, public security strategies, and criminal justice systems. We propose a geographic regression discontinuity design that compares neighborhoods located immediately on either side of the administrative border, using distance to the boundary as the running variable. The analysis will combine geocoded crime or emergency-call data with neighborhood-level demographic and socioeconomic characteristics to estimate whether crossing the administrative boundary is associated with a discrete change in the incidence and composition of crime. We will examine heterogeneous effects across crime categories and different segments of the border, as well as potential mechanisms related to policing, institutional capacity, and urban characteristics. By focusing on highly comparable locations separated by an administrative boundary, the study seeks to provide evidence on the extent to which differences in public security institutions and policies translate into local differences in crime within a continuous metropolitan area.</p>
-          </details>
-        </article>
 
-        <article class="research-card">
-          <div class="research-card-head">
-            <span class="research-status">Working paper</span>
-            <span class="research-year-small">WP</span>
-          </div>
-          <h3 class="research-title">Fields of Crime: Satellite Evidence on Cultivation and Criminal Activity</h3>
-          <p class="research-meta">Marco Méndez Atienza &amp; J. García-Vara</p>
-          <details>
-            <summary>Abstract</summary>
-            <p class="abstract-text">This paper examines the relationship between agricultural cultivation and criminal activity using high-resolution satellite imagery. We use remotely sensed data to identify and map cultivated areas at a fine spatial scale and combine these measures with geocoded information on crime and violence. This approach allows us to study whether the spatial distribution and expansion of cultivation are systematically associated with changes in criminal activity, including whether particular types of cultivation generate distinct patterns of violence and territorial control. We further examine spatial and temporal heterogeneity in this relationship and explore potential mechanisms linking agricultural production to criminal activity, including competition over land, control of productive territories, and the presence of organized criminal groups. By integrating satellite-based measures of land use with granular crime data, the study seeks to provide new evidence on the geography of illicit activity and on the value of remote sensing for studying criminal behavior in settings where conventional administrative data provide only a partial picture.</p>
-          </details>
-        </article>
 
-        <article class="research-card">
-          <div class="research-card-head">
-            <span class="research-status">Working paper</span>
-            <span class="research-year-small">WP</span>
-          </div>
-          <h3 class="research-title">When the World Cup Comes to Town: Emergency Calls and the 2026 FIFA World Cup in Mexico</h3>
-          <p class="research-meta">Marco Méndez Atienza, David Arteaga-Zumaya &amp; Andrés Felipe Gutiérrez-Jaramillo</p>
-          <details>
-            <summary>Abstract</summary>
-            <p class="abstract-text">This article examines whether the 2026 FIFA World Cup changed the frequency and composition of emergency calls in Mexico. We use administrative data from the national 911 emergency call system and exploit temporal and geographic variation associated with the organization of World Cup matches in host cities. Our empirical strategy compares trends in emergency calls in exposed and non-exposed locations before, during, and after the tournament. We analyze both total call volume and specific categories of incidents, including domestic violence, fights, injuries, property crime, and disturbances of public order. The study contributes to the literature on mega-events, crime, interpersonal violence, and demand for emergency services.</p>
-          </details>
-        </article>
 
-        <article class="research-card">
-          <div class="research-card-head">
-            <span class="research-status">Working paper</span>
-            <span class="research-year-small">WP</span>
-          </div>
-          <h3 class="research-title">Does Economic Complexity Make Development Lending More Effective? Evidence from World Bank Projects</h3>
-          <p class="research-meta">Marco Méndez Atienza, Daniela Arciga-Portela, Mariana Echániz-Arciga &amp; Andoni Garritz-Ayala</p>
-          <details>
-            <summary>Abstract</summary>
-            <p class="abstract-text">Does the productive structure of a recipient country affect the effectiveness of World Bank lending? This paper provides causal evidence that higher economic complexity, a summary measure of the diversity and sophistication of a country's export basket, significantly improves project outcomes as evaluated by the World Bank's Independent Evaluation Group (IEG). We instrument lagged Economic Complexity Index (ECI) values with a Bartik-style shift-share variable constructed from the trade-partner complexity of each country's pre-sample (1995–2000) export network. The first-stage F-statistic exceeds 235, ruling out weak-instrument concerns. Our preferred IV specification, using a PCA-based composite effectiveness index that combines IEG project outcomes with Bank performance ratings, yields a coefficient of 0.785 (SE = 0.400, p = 0.052), rising to 1.022 (SE = 0.435, p &lt; 0.05) under a parsimonious control set. Heterogeneity analysis reveals that the effect is concentrated in Development Policy Loans (DPLs), consistent with an absorptive capacity mechanism: institutional and policy reforms financed by DPLs require the distributed organizational capabilities that ECI proxies, whereas investment projects impose more modular capacity requirements. These findings suggest that productive structure is a first-order determinant of development lending effectiveness, with implications for project design and country selectivity.</p>
-          </details>
-        </article>
-
-        <article class="research-card">
-          <div class="research-card-head">
-            <span class="research-status">Working paper</span>
-            <span class="research-year-small">WP</span>
-          </div>
-          <h3 class="research-title">Complex Economies, Unequal Pay? Economic Complexity and the Gender Wage Gap in Mexico</h3>
-          <p class="research-meta">Marco Méndez Atienza, María Estrella Morales-Vázquez &amp; Rodrigo Solórzano-Laguna</p>
-          <details>
-            <summary>Abstract</summary>
-            <p class="abstract-text">This paper studies the relationship between economic complexity and the gender wage gap across Mexican states. We combine microdata from the National Survey of Occupation and Employment (ENOE) with the state-level Economic Complexity Index (ECI) published by Data México to construct a semiannual panel beginning in 2015. We estimate both raw and adjusted gender wage gaps, with the latter obtained through an Oaxaca–Blinder decomposition. We then examine whether changes in economic complexity are systematically associated with changes in the wage gap, using state and period fixed effects. We also study four possible mechanisms: sectoral composition, formality, occupational segregation, and human capital. Our main hypothesis is that greater economic complexity is associated with a smaller gender wage gap.</p>
-          </details>
-        </article>
-
-        <article class="research-card">
-          <div class="research-card-head">
-            <span class="research-status">Working paper</span>
-            <span class="research-year-small">WP</span>
-          </div>
-          <h3 class="research-title">Beyond Counts: Exposure-Adjusted Measures of Public Disorder Around the Mexico City Metro</h3>
-          <p class="research-meta">Marco Méndez Atienza</p>
-          <details>
-            <summary>Abstract</summary>
-            <p class="abstract-text">This paper analyzes the spatial distribution of emergency calls reporting public brawls and disturbances (<em>riña</em>) around Mexico City Metro stations in 2019. The outcome is reported public disorder, 911 calls registered by the city's C5 system, rather than verified incidents, and the analysis is descriptive and associational throughout. Using global and local spatial autocorrelation statistics and Getis–Ord hotspot analysis under transit-network and geographic spatial-weight structures, and across 100, 200, and 400 m buffers, the paper reports three main findings. First, the geography of reported disorder is denominator-dependent: call counts cluster in the central commercial core, while calls per Metro rider concentrate in a compact north-eastern corridor around Lines 4, 5, and B. Second, this per-rider corridor is not merely a denominator artifact: hotspot stations show above-average call counts and above-average calls per surrounding resident, although low ridership amplifies their per-rider rate relative to the system average. Third, aggregate neighborhood marginalization does not appear to be the main correlate of hotspot intensity. The population-weighted 2020 urban marginalization index at the colonia level is weakly to moderately negatively associated with hotspot intensity, and hotspot catchments contain no population in high-marginalization colonias. Instead, specific dimensions of residential vulnerability, especially overcrowding, limited digital access, and educational deficit, co-vary more consistently with the corridor. Because the outcome depends on reporting behavior as well as on underlying events, these associations characterize reported disorder, not its full latent distribution. The findings suggest that reported station-area disorder is better understood as the spatial overlap of mobility exposure, urban activity, and selected dimensions of residential vulnerability than as a simple function of aggregate neighborhood deprivation.</p>
-          </details>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="teaching">
-      <div class="container two-col">
-        <div>
-          <p class="section-label">Teaching</p>
-          <h2>Courses</h2>
-        </div>
-        <div class="course-groups">
-          <div>
-            <h3>Econometrics and data analysis</h3>
-            <ul>
-              <li>Foundations of Econometrics</li>
-              <li>Econometrics</li>
-              <li>Time Series</li>
-              <li>Multivariate Analysis</li>
-              <li>Causal Inference</li>
-              <li>Spatial Analysis</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Other courses</h3>
-            <ul>
-              <li>Research Methodology</li>
-              <li>Consumer Theory</li>
-              <li>Differential Calculus</li>
-              <li>Linear Algebra</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt" id="experience">
-      <div class="container section-heading">
-        <div>
-          <p class="section-label">Experience</p>
-          <h2>Professional experience</h2>
-        </div>
-      </div>
-
-      <div class="container timeline">
-        <article>
-          <div class="timeline-date">2023–present</div>
-          <div>
-            <h3>Director of the B.A. Program in Economics</h3>
-            <p class="institution">Tecnológico de Monterrey, Mexico City Campus</p>
-            <p>Program administration, curriculum development, academic coordination, and student research initiatives.</p>
-          </div>
-        </article>
-        <article>
-          <div class="timeline-date">2023–present</div>
-          <div>
-            <h3>Economic Consultant</h3>
-            <p class="institution">Independent consulting</p>
-            <p>Demand studies, regional development, mobility, infrastructure, and market analysis.</p>
-          </div>
-        </article>
-        <article>
-          <div class="timeline-date">2022</div>
-          <div>
-            <h3>Junior Consultant</h3>
-            <p class="institution">Consultores Internacionales, S.C.</p>
-            <p>Economic, sectoral, and strategic analysis for public and private clients.</p>
-          </div>
-        </article>
-        <article>
-          <div class="timeline-date">2017–2020</div>
-          <div>
-            <h3>Advisor</h3>
-            <p class="institution">National Conference of Governors</p>
-            <p>Technical coordination, statistical analysis, and preparation of policy documents.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="container contact-grid">
-        <div>
-          <p class="section-label light">Contact</p>
-          <h2>Contact information</h2>
-        </div>
-        <div class="contact-actions">
-          <a href="mailto:marco.mendez@tec.mx">marco.mendez@tec.mx</a>
-          <a href="https://www.linkedin.com/in/marcomna/" target="_blank" rel="noopener">LinkedIn ↗</a>
-          <a href="https://github.com/mmendezatienza" target="_blank" rel="noopener">GitHub ↗</a>
-          <a href="https://orcid.org/0009-0003-3967-4782" target="_blank" rel="noopener">ORCID ↗</a>
-          <a href="assets/CV.pdf" target="_blank" rel="noopener">Curriculum vitae ↗</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <span>© 2026 Marco Méndez Atienza</span>
-      <span>Hosted on GitHub Pages</span>
-    </div>
-  </footer>
-
-  <script>
+<article class="research-card">
+<div class="research-card-head">
+<span class="research-status published">Published</span>
+<span class="research-year-small">2026</span>
+</div>
+<h3 class="research-title">Yes to Disarmament, Yes to Peace: Measuring the Impact of Mexico City’s Gun Buyback Initiative</h3>
+<p class="research-meta">Marco Méndez-Atienza &amp; Aurora Ramírez Álvarez</p>
+<p class="research-meta"><em>World Development</em> · <a href="https://www.sciencedirect.com/science/article/pii/S0305750X26002354" rel="noopener" target="_blank">Article ↗</a></p>
+<details>
+<summary>Abstract</summary>
+<p class="abstract-text">This paper evaluates Mexico City’s voluntary gun buyback program, <em>Sí al desarme, sí a la paz</em>, launched in January 2019. Using state-month data for 2017–2023, we estimate program effects with synthetic control and synthetic difference-in-differences designs. We find a statistically significant decline in our composite outcome, which combines recorded firearm-related crimes with unclassified deaths to conservatively guard against possible outcome reclassification. The estimated decline is equivalent to roughly 17% of the composite outcome’s pre-treatment mean. Because unclassified deaths need not be firearm-related, this specification prioritizes robustness to misclassification over direct substantive interpretation. The more interpretable disaggregated estimates show that the effect is concentrated in intentional firearm injuries, while effects on firearm homicides are statistically indistinguishable from zero across specifications. An illustrative Phase 1 calculation implies approximately 11,354 MXN ($560 USD) in spending per estimated averted event in the composite outcome. We also find no detectable substitution into non-firearm injuries. Mechanism evidence indicates that the program primarily collected civilian handguns and is consistent with a situational opportunity-reduction channel in civilian settings: reducing immediate access to firearms can limit escalation and lower the likelihood that routine conflicts translate into gun injuries, rather than directly disrupting organized-crime arsenals. Robustness checks, including placebo timing tests around COVID lockdown and triangulation with INEGI vital statistics, suggest that the results are not driven by reporting or reclassification. The findings contribute the first causal evidence on a voluntary gun buyback in Mexico and, by focusing on non-lethal firearm injuries rather than solely on homicides, identify a margin of impact that prior Latin American evaluations have not examined.</p>
+</details>
+</article><article class="research-card">
+<div class="research-card-head">
+<span class="research-status published">Published</span>
+<span class="research-year-small">2026</span>
+</div>
+<h3 class="research-title">Urban Dystopias: Crime around the Utopías in Mexico City</h3>
+<p class="research-meta">Marco Méndez-Atienza</p>
+<p class="research-meta"><em>Global Crime</em> · <a href="https://doi.org/10.1080/17440572.2026.2698532" rel="noopener" target="_blank">Article ↗</a></p>
+<details>
+<summary>Abstract</summary>
+<p class="abstract-text">This paper evaluates Mexico City’s Utopías, a network of large community complexes designed to activate situational crime-prevention mechanisms. Using monthly georeferenced crime data (2017–2024) and a staggered difference-in-differences estimator, we compare AGEBs within 300 metres of each Utopía to not-yet-treated areas. The results show clear heterogeneity: significant reductions in intentional injuries, simple drug possession, mass event theft, public-service vehicle theft without violence, and RTP robbery with violence, but increases in shoplifting, property damage, intimidation, violent vehicle theft, pickpocketing on public transport, and homicide by beating. These mixed effects are consistent with Situational Crime Prevention predictions about differential mechanism activation under conditions of inequality and institutional fragility, as spatial activation strengthens guardianship while simultaneously expanding opportunities for opportunistic crime. The study shows how environmental design performs under inequality and highlights the need for sustained management to mitigate criminogenic spillovers.</p>
+</details>
+</article><article class="research-card">
+<div class="research-card-head">
+<span class="research-status">Working paper</span>
+<span class="research-year-small">WP</span>
+</div>
+<h3 class="research-title">Beyond Counts: Exposure-Adjusted Measures of Public Disorder Around the Mexico City Metro</h3>
+<p class="research-meta">Marco Méndez-Atienza</p>
+<details>
+<summary>Abstract</summary>
+<p class="abstract-text">This paper analyzes the spatial distribution of emergency calls reporting public brawls and disturbances (<em>riña</em>) around Mexico City Metro stations in 2019. The outcome is reported public disorder, 911 calls registered by the city's C5 system, rather than verified incidents, and the analysis is descriptive and associational throughout. Using global and local spatial autocorrelation statistics and Getis–Ord hotspot analysis under transit-network and geographic spatial-weight structures, and across 100, 200, and 400 m buffers, the paper reports three main findings. First, the geography of reported disorder is denominator-dependent: call counts cluster in the central commercial core, while calls per Metro rider concentrate in a compact north-eastern corridor around Lines 4, 5, and B. Second, this per-rider corridor is not merely a denominator artifact: hotspot stations show above-average call counts and above-average calls per surrounding resident, although low ridership amplifies their per-rider rate relative to the system average. Third, aggregate neighborhood marginalization does not appear to be the main correlate of hotspot intensity. The population-weighted 2020 urban marginalization index at the colonia level is weakly to moderately negatively associated with hotspot intensity, and hotspot catchments contain no population in high-marginalization colonias. Instead, specific dimensions of residential vulnerability, especially overcrowding, limited digital access, and educational deficit, co-vary more consistently with the corridor. Because the outcome depends on reporting behavior as well as on underlying events, these associations characterize reported disorder, not its full latent distribution. The findings suggest that reported station-area disorder is better understood as the spatial overlap of mobility exposure, urban activity, and selected dimensions of residential vulnerability than as a simple function of aggregate neighborhood deprivation.</p>
+</details>
+</article><article class="research-card">
+<div class="research-card-head">
+<span class="research-status">Working paper</span>
+<span class="research-year-small">WP</span>
+</div>
+<h3 class="research-title">The Geography of Jurisdiction: Administrative Borders and Urban Crime</h3>
+<p class="research-meta">Marco Méndez-Atienza</p>
+<details>
+<summary>Abstract</summary>
+<p class="abstract-text">This paper examines whether administrative boundaries generate discontinuities in crime and public safety by exploiting the border between Mexico City and the State of Mexico. Although neighborhoods located on opposite sides of the boundary can be geographically close and share similar urban and socioeconomic characteristics, they are governed by different state and local institutions, police forces, public security strategies, and criminal justice systems. We propose a geographic regression discontinuity design that compares neighborhoods located immediately on either side of the administrative border, using distance to the boundary as the running variable. The analysis will combine geocoded crime or emergency-call data with neighborhood-level demographic and socioeconomic characteristics to estimate whether crossing the administrative boundary is associated with a discrete change in the incidence and composition of crime. We will examine heterogeneous effects across crime categories and different segments of the border, as well as potential mechanisms related to policing, institutional capacity, and urban characteristics. By focusing on highly comparable locations separated by an administrative boundary, the study seeks to provide evidence on the extent to which differences in public security institutions and policies translate into local differences in crime within a continuous metropolitan area.</p>
+</details>
+</article><article class="research-card">
+<div class="research-card-head">
+<span class="research-status">Working paper</span>
+<span class="research-year-small">WP</span>
+</div>
+<h3 class="research-title">Fields of Crime: Satellite Evidence on Cultivation and Criminal Activity</h3>
+<p class="research-meta">Marco Méndez-Atienza &amp; Job García Vara</p>
+<details>
+<summary>Abstract</summary>
+<p class="abstract-text">This paper examines the relationship between agricultural cultivation and criminal activity using high-resolution satellite imagery. We use remotely sensed data to identify and map cultivated areas at a fine spatial scale and combine these measures with geocoded information on crime and violence. This approach allows us to study whether the spatial distribution and expansion of cultivation are systematically associated with changes in criminal activity, including whether particular types of cultivation generate distinct patterns of violence and territorial control. We further examine spatial and temporal heterogeneity in this relationship and explore potential mechanisms linking agricultural production to criminal activity, including competition over land, control of productive territories, and the presence of organized criminal groups. By integrating satellite-based measures of land use with granular crime data, the study seeks to provide new evidence on the geography of illicit activity and on the value of remote sensing for studying criminal behavior in settings where conventional administrative data provide only a partial picture.</p>
+</details>
+</article><article class="research-card">
+<div class="research-card-head">
+<span class="research-status">Working paper</span>
+<span class="research-year-small">WP</span>
+</div>
+<h3 class="research-title">When the World Cup Comes to Town: Emergency Calls and the 2026 FIFA World Cup in Mexico</h3>
+<p class="research-meta">Marco Méndez-Atienza, David Arteaga-Zumaya &amp; Andrés Felipe Gutiérrez-Jaramillo</p>
+<details>
+<summary>Abstract</summary>
+<p class="abstract-text">This article examines whether the 2026 FIFA World Cup changed the frequency and composition of emergency calls in Mexico. We use administrative data from the national 911 emergency call system and exploit temporal and geographic variation associated with the organization of World Cup matches in host cities. Our empirical strategy compares trends in emergency calls in exposed and non-exposed locations before, during, and after the tournament. We analyze both total call volume and specific categories of incidents, including domestic violence, fights, injuries, property crime, and disturbances of public order. The study contributes to the literature on mega-events, crime, interpersonal violence, and demand for emergency services.</p>
+</details>
+</article><article class="research-card">
+<div class="research-card-head">
+<span class="research-status">Working paper</span>
+<span class="research-year-small">WP</span>
+</div>
+<h3 class="research-title">Does Economic Complexity Make Development Lending More Effective? Evidence from World Bank Projects</h3>
+<p class="research-meta">Marco Méndez-Atienza, Daniela Arciga-Portela, Mariana Echániz-Arciga &amp; Andoni Garritz-Ayala</p>
+<details>
+<summary>Abstract</summary>
+<p class="abstract-text">Does the productive structure of a recipient country affect the effectiveness of World Bank lending? This paper provides causal evidence that higher economic complexity, a summary measure of the diversity and sophistication of a country's export basket, significantly improves project outcomes as evaluated by the World Bank's Independent Evaluation Group (IEG). We instrument lagged Economic Complexity Index (ECI) values with a Bartik-style shift-share variable constructed from the trade-partner complexity of each country's pre-sample (1995–2000) export network. The first-stage F-statistic exceeds 235, ruling out weak-instrument concerns. Our preferred IV specification, using a PCA-based composite effectiveness index that combines IEG project outcomes with Bank performance ratings, yields a coefficient of 0.785 (SE = 0.400, p = 0.052), rising to 1.022 (SE = 0.435, p &lt; 0.05) under a parsimonious control set. Heterogeneity analysis reveals that the effect is concentrated in Development Policy Loans (DPLs), consistent with an absorptive capacity mechanism: institutional and policy reforms financed by DPLs require the distributed organizational capabilities that ECI proxies, whereas investment projects impose more modular capacity requirements. These findings suggest that productive structure is a first-order determinant of development lending effectiveness, with implications for project design and country selectivity.</p>
+</details>
+</article><article class="research-card">
+<div class="research-card-head">
+<span class="research-status">Working paper</span>
+<span class="research-year-small">WP</span>
+</div>
+<h3 class="research-title">Complex Economies, Unequal Pay? Economic Complexity and the Gender Wage Gap in Mexico</h3>
+<p class="research-meta">Marco Méndez-Atienza, María Estrella Morales-Vázquez &amp; Rodrigo Solórzano-Laguna</p>
+<details>
+<summary>Abstract</summary>
+<p class="abstract-text">This paper studies the relationship between economic complexity and the gender wage gap across Mexican states. We combine microdata from the National Survey of Occupation and Employment (ENOE) with the state-level Economic Complexity Index (ECI) published by Data México to construct a semiannual panel beginning in 2015. We estimate both raw and adjusted gender wage gaps, with the latter obtained through an Oaxaca–Blinder decomposition. We then examine whether changes in economic complexity are systematically associated with changes in the wage gap, using state and period fixed effects. We also study four possible mechanisms: sectoral composition, formality, occupational segregation, and human capital. Our main hypothesis is that greater economic complexity is associated with a smaller gender wage gap.</p>
+</details>
+</article></div>
+</section>
+<section class="section" id="teaching">
+<div class="container two-col">
+<div>
+<p class="section-label">Teaching</p>
+<h2>Courses</h2>
+</div>
+<div class="course-groups">
+<div>
+<h3>Econometrics and data analysis</h3>
+<ul>
+<li>Foundations of Econometrics</li>
+<li>Econometrics</li>
+<li>Time Series</li>
+<li>Multivariate Analysis</li>
+<li>Causal Inference</li>
+<li>Spatial Analysis</li>
+</ul>
+</div>
+<div>
+<h3>Other courses</h3>
+<ul>
+<li>Research Methodology</li>
+<li>Consumer Theory</li>
+<li>Differential Calculus</li>
+<li>Linear Algebra</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="section alt" id="experience">
+<div class="container section-heading">
+<div>
+<p class="section-label">Experience</p>
+<h2>Professional experience</h2>
+</div>
+</div>
+<div class="container timeline">
+<article>
+<div class="timeline-date">2023–present</div>
+<div>
+<h3>Director of the B.A. Program in Economics</h3>
+<p class="institution">Tecnológico de Monterrey, Mexico City Campus</p>
+<p>Program administration, curriculum development, academic coordination, and student research initiatives.</p>
+</div>
+</article>
+<article>
+<div class="timeline-date">2023–present</div>
+<div>
+<h3>Economic Consultant</h3>
+<p class="institution">Independent consulting</p>
+<p>Demand studies, regional development, mobility, infrastructure, and market analysis.</p>
+</div>
+</article>
+<article>
+<div class="timeline-date">2022</div>
+<div>
+<h3>Junior Consultant</h3>
+<p class="institution">Consultores Internacionales, S.C.</p>
+<p>Economic, sectoral, and strategic analysis for public and private clients.</p>
+</div>
+</article>
+<article>
+<div class="timeline-date">2017–2020</div>
+<div>
+<h3>Advisor</h3>
+<p class="institution">National Conference of Governors</p>
+<p>Technical coordination, statistical analysis, and preparation of policy documents.</p>
+</div>
+</article>
+</div>
+</section>
+<section class="contact" id="contact">
+<div class="container contact-grid">
+<div>
+<p class="section-label light">Contact</p>
+<h2>Contact information</h2>
+</div>
+<div class="contact-actions">
+<a href="mailto:marco.mendez@tec.mx">marco.mendez@tec.mx</a>
+<a href="https://www.linkedin.com/in/marcomna/" rel="noopener" target="_blank">LinkedIn ↗</a>
+<a href="https://github.com/mmendezatienza" rel="noopener" target="_blank">GitHub ↗</a>
+<a href="https://orcid.org/0009-0003-3967-4782" rel="noopener" target="_blank">ORCID ↗</a>
+<a href="assets/CV.pdf" rel="noopener" target="_blank">Curriculum vitae ↗</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<span>© 2026 Marco Méndez-Atienza</span>
+<span>Hosted on GitHub Pages</span>
+</div>
+</footer>
+<script>
     (function () {
       const root = document.documentElement;
       const button = document.querySelector(".theme-toggle");
@@ -547,6 +510,5 @@
       }
     })();
   </script>
-
 </body>
 </html>
